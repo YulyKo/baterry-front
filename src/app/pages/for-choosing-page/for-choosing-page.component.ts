@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-for-choosing-page',
@@ -8,12 +9,14 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class ForChoosingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  selectCathegory(event: any) {
-    const result = event.target.value;
+
+  selectCathegory(event: any, pageName: string) {
+    const result = event.target.value
+    this.router.navigate([pageName])
     console.log(result)
   }
 }
