@@ -14,5 +14,6 @@ export class ForChoosingPageComponent implements OnInit {
   }
   selectCathegory(event: any) {
     const result = event.target.value;
+    console.log(result)
   }
 }
