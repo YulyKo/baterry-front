@@ -11,6 +11,7 @@ import { NightThemeComponent } from './pages/home-page/night-theme/night-theme.c
 import { FormForChoosingComponent } from './pages/form-for-choosing/form-for-choosing.component';
 import { ForChoosingPageComponent } from './pages/for-choosing-page/for-choosing-page.component';
 import { ModalFormComponent } from './elements/modal-form/modal-form.component';
+import { NotFoudPageComponent } from './pages/not-foud-page/not-foud-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModalFormComponent } from './elements/modal-form/modal-form.component';
     NightThemeComponent,
     FormForChoosingComponent,
     ForChoosingPageComponent,
-    ModalFormComponent
+    ModalFormComponent,
+    NotFoudPageComponent
   ],
   imports: [
     BrowserModule,
