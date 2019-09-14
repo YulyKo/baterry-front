@@ -1,11 +1,11 @@
 <div class="container">
-  <h2 class="text">Choose your device</h2>
+  <h2 class="text text--title">Choose your device</h2>
 <form class="form">
     <button class="chategory-btn" type="checkbox" value="transport" name="transport" id="transport" (click)="selectCathegory($event)"></button>
     <button class="chategory-btn" type="checkbox" value="wearable-device" name="wearable-device" id="wearable-device" (click)="selectCathegory($event)"></button>
     <button class="chategory-btn" type="checkbox" value="device" name="device" id="device" (click)="selectCathegory($event)"></button>
   </form>
-  <p class="text">or</p>
-  <button class="auto-definition-btn" type="button" (click)="selectCathegory($event)"><span class="text">Auto deﬁnition</span></button>
+  <p class="text text--or">or</p>
+  <button class="auto-definition-btn" type="button" value="auto" (click)="selectCathegory($event)"><span class="text">Auto deﬁnition</span></button>
 </div>
 
